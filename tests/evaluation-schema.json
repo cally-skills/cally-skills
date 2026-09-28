@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cally public evaluation record",
+  "type": "object",
+  "required": ["case_id", "actual_route", "focus", "fact_hallucination", "over_directional", "abstract_noun_density", "sentence_length", "translationese", "user_first_paragraph_clarity", "jargon_leakage", "notes"],
+  "properties": {
+    "case_id": {"type": "string"},
+    "actual_route": {"type": "string"},
+    "focus": {"type": "object", "minProperties": 1, "additionalProperties": {"enum": ["pass", "edge", "fail"]}},
+    "fact_hallucination": {"enum": ["pass", "edge", "fail"]},
+    "over_directional": {"enum": ["pass", "edge", "fail"]},
+    "abstract_noun_density": {"enum": ["pass", "edge", "fail"]},
+    "sentence_length": {"enum": ["pass", "edge", "fail"]},
+    "translationese": {"enum": ["pass", "edge", "fail"]},
+    "user_first_paragraph_clarity": {"enum": ["pass", "edge", "fail"]},
+    "jargon_leakage": {"enum": ["pass", "edge", "fail"]},
+    "notes": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": true
+}

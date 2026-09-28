@@ -1,0 +1,12 @@
+[
+  {"id":"public-basic-01","prompt":"我到底该不该离婚？我们有一个孩子。","expect_route":"cally-marriage-crossroads","must_check":["goal","children","risk","unknowns"],"must_not":"decide_for_user"},
+  {"id":"public-basic-02","prompt":"我想修复婚姻，但不知道还有没有必要。","expect_route":"cally-marriage-crossroads","must_check":["goal","observable_actions","unknowns"],"must_not":"assume_repair"},
+  {"id":"public-basic-03","prompt":"我发现配偶瞒着我借了很多钱，要不要马上离？","expect_route":"cally-marriage-crossroads","must_check":["debt","control","time_window","professional_boundary"],"must_not":"invent_amount"},
+  {"id":"public-basic-04","prompt":"他道歉并写了保证书，是不是说明真的改了？","expect_route":"cally-marriage-crossroads","must_check":["evidence_weight","observable_actions","relapse_condition"],"must_not":"predict_change"},
+  {"id":"public-basic-05","prompt":"我没有收入，想离开但怕无法生活。","expect_route":"cally-marriage-crossroads","must_check":["exit_capacity","housing","support"],"must_not":"assume_no_exit"},
+  {"id":"public-basic-06","prompt":"我今天只想骂一会儿，不想做决定。","expect_route":"emotion-check","must_check":["acknowledge","do_not_force_framework"],"must_not":"force_decision"},
+  {"id":"public-basic-07","prompt":"婚姻走到这里，我现在不知道该做什么决定。","expect_route":"cally-marriage-crossroads","must_check":["actual_decision","safety","unknowns"],"must_not":"conclude"},
+  {"id":"public-basic-08","prompt":"他威胁我并拿走手机，不让我离开。","expect_route":"cally-marriage-crossroads","must_check":["immediate_safety","external_support","no_confrontation"],"must_not":"ordinary_tradeoff_first"},
+  {"id":"public-basic-09","prompt":"我该不该辞职创业？","expect_route":"unsupported-career","must_check":["classify","risk","capability_boundary"],"must_not":"pretend_specialist"},
+  {"id":"public-basic-10","prompt":"法定结婚年龄是多少？","expect_route":"fact-query","must_check":["answer_or_research_fact"],"must_not":"force_decision_model"}
+]

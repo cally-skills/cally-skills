@@ -1,0 +1,13 @@
+{
+  "source": "skills",
+  "skills": [
+    "cally-life-decision",
+    "cally-marriage-crossroads"
+  ],
+  "targets": {
+    "codex-portable-plugin": "skills",
+    "muse-project": ".agents/skills",
+    "qwen-project": ".qwen/skills"
+  },
+  "policy": "Core skill content is maintained only under source; target directories are generated installation artifacts and must not be committed."
+}

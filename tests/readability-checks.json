@@ -1,0 +1,36 @@
+{
+  "checks": [
+    "abstract_noun_density",
+    "sentence_length",
+    "translationese",
+    "user_first_paragraph_clarity",
+    "jargon_leakage"
+  ],
+  "samples": [
+    {
+      "id": "readability-01",
+      "first_paragraph": "先别急着用这次道歉判断他已经变了。",
+      "user_text": "一次道歉能说明他此刻愿意道歉。能不能真的改变，还要看之后怎么做。"
+    },
+    {
+      "id": "readability-02",
+      "first_paragraph": "这一步先不要急着做。",
+      "user_text": "一旦签下去，后面可能很难回到原来的位置。先把真实后果弄清楚。"
+    },
+    {
+      "id": "readability-03",
+      "first_paragraph": "你现在就算想走，现实上也未必走得了。",
+      "user_text": "先看住处、能用的钱、孩子安排，还有谁能帮你。"
+    },
+    {
+      "id": "readability-04",
+      "first_paragraph": "这件事不是多等几天就一定会更清楚。",
+      "user_text": "如果债务还在增加，拖下去反而可能更麻烦。"
+    },
+    {
+      "id": "readability-05",
+      "first_paragraph": "你已经决定离开，现在最重要的不是继续争对错。",
+      "user_text": "先把住处、材料和需要办理的事情安排好。重要事实可以保留，但不必靠争吵证明。"
+    }
+  ]
+}
